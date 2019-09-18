@@ -10,7 +10,7 @@ hidden: true
 
 **Course**: DS   <br/>
 **Mod**: Mod 3 V2               <br/>
-**Topic**:  Linear Algebra <br/>
+**Topic**:  Calculus <br/>
 **Amount of time**:  60 minutes  <br/>
 **Author**: Laura Colon-Melendez, Victor Geislinger
 
