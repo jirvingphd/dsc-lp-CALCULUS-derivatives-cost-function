@@ -12,100 +12,77 @@ hidden: true
 **Mod**: Mod 3 V2               <br/>
 **Topic**:  Linear Algebra <br/>
 **Amount of time**:  60 minutes  <br/>
-**Author**: Laura Colon-Melendez, Greg Damico, Alison Peebles Madigan
+**Author**: Laura Colon-Melendez, Victor Geislinger
 
-Ported from starter repos: [link](https://github.com/learn-co-curriculum/ds-lessons-starter/tree/master/mathematic_foundations/linear_algebra) and [link](https://github.com/learn-co-curriculum/ds-lessons-starter/tree/master/mathematic_foundations/linear_algebra2)
-
+Some material ported from starter repo: [link](https://github.com/MrGeislinger/flatiron-school-data-science-curriculum-resources/blob/master/Mathematics/Calculus/gradient_descent.ipynb)
 ***
 
 #### Lesson Summary:
 
-The lesson starts by motivating the study of linear algebra for data science by showcasing its application in problems data scientists typically solve. Next, a problem is presented to students where they have to think about how to solve a system of linear equations in 5 dimensions. This leads to a quick discussion on how to solve two dimensional systems of linear equations by hand. Before showing students how to solve systems of linear equations using Numpy, vectors and matrices are discussed. Students are shown why NumPy is used to perform arithmetic with non-scalars with a vector addition problem. Vector multiplication is introduced: the cross product of two vectors is mentioned but more attention is placed on computing the dot product of two vectors using NumPy. Matrices are introduced, including how to define matrices using NumPy, and matrix multiplication is explained -- the Hadamard product is mentioned and more time is spent discussing multiplication of two matrices using the dot product via NumPy. Students are asked to compute the shape of a NumPy array and to compute the transpose of a matrix.  Students multiply matrices and demonstrate that matrix multiplication is not commutative. Next, the inverse of a matrix is defined. After this, students solve a two-dimensional system of linear equations using NumPy, then they solve the problem posed to them at the beginning of the lesson. If time allows, simple linear regression is discussed and students solve a toy simple linear regression problem using NumPy. 
-
+The lesson motivates the topic of derivatives by starting with a physics example: we wish to know the speed of a runner at a given instant in time. This leads to a discussion of the derivative of a function at a point and how it relates to the slope of the line tangent at that point. The difference quotient is introduced and connected to the derivative. Students write code to compute the limit of the difference quotient as $\Delta x$ goes to zero, and compare the values of derivatives obtained in this fashion to the derivatives of functions obtained by appluing power rules, constant factor rules, and the chain rule. Students use the derivative of a function to compute the minimum of a function. This leads to a discussion of what happens to the slope of the lines tangent to a curve before and after optimal values. After this discussion, the subject of cost functions in simple linear regression is introduced in the context of finding the line of best fit for some data. An example is presented, and students are asked to compute the mean squared error for different regression lines as the slope changes and intercept remains constant. They plot the mean squared error against different slope values. This is identified as the cost curve. Finally, the 3-dimensional cost curve for simple linear regression is shown and gradient descent is mentioned as a technique to find the best values of slope and intercept.  
 
 
 #### Topic:
 
-Statistical Modeling - Linear Algebra
+Statistical Modeling - Calculus
 
 #### Learn.co material:
 
-[Motivation for Linear Algebra in Data Science](https://github.com/learn-co-curriculum/dsc-lingalg-motivation)
+[Introduction to Derivatives](https://github.com/learn-co-curriculum/dsc-derivatives-intro)
 
-[Systems of Linear Equations](https://github.com/learn-co-curriculum/dsc-lingalg-linear-equations)
+[Introduction to Derivatives - Lab](https://github.com/learn-co-curriculum/dsc-derivatives-intro-lab)
 
-[Systems of Linear Equations - Quiz](https://github.com/learn-co-curriculum/dsc-lingalg-linear-equations-quiz)
+[Derivatives of Non-Linear Functions](https://github.com/learn-co-curriculum/dsc-derivatives-of-non-linear-functions)
 
-[Scalars, Vectors, Matrices, and Tensors - Code Along](https://github.com/learn-co-curriculum/dsc-scalars-vectors-matrices-tensors-codealong)
+[Rules for Derivatives](https://github.com/learn-co-curriculum/dsc-rules-for-derivatives)
 
-[Vectors and Matrices in Numpy - Lab](https://github.com/learn-co-curriculum/dsc-linalg-vector-matrices-numpy-lab)
+[Rules for Derivatives - Lab](https://github.com/learn-co-curriculum/dsc-rules-for-derivatives-lab)
 
-[Matrix Multiplication - Code Along](https://github.com/learn-co-curriculum/dsc-linalg-mat-multiplication-codealong)
+[Derivatives: the Chain Rule](https://github.com/learn-co-curriculum/dsc-derivatives-chain-rule)
 
-[Properties of Dot Product - Lab](https://github.com/learn-co-curriculum/dsc-linalg-dot-product-properties-lab)
+[Derivatives: Conclusion](https://github.com/learn-co-curriculum/dsc-derivatives-conclusion)
 
-[Solving Systems of Linear Equations with Numpy - Code Along](https://github.com/learn-co-curriculum/dsc-lineq-numpy-codealong)
+[Introduction to Gradient Descent](https://github.com/learn-co-curriculum/dsc-gradient-descent-intro)
 
-[Solving Systems of Linear Equations with Numpy - Lab](https://github.com/learn-co-curriculum/dsc-lineq-numpy-lab)
 
 #### Prerequisite knowledge:
 
-Students should have a grasp of simple algebra problems and how to solve them. The focus will be on extending familiar algebraic techniques to higher-dimensional cases. 
+Students should know about solving simple linear regression problems using ordinary least squares.
 
 
 #### Prerequisite Learn.co material:
 
-[Introduction to NumPy](https://github.com/learn-co-curriculum/dsc-introduction-to-numpy)
+[Regression Analysis using Linear Algebra and Numpy - Code Along](https://github.com/learn-co-curriculum/dsc-linalg-regression-codealong)
 
-[Getting Started with NumPy](https://github.com/learn-co-curriculum/dsc-getting-started-with-numpy)
+[Regression with Linear Algebra - Lab](https://github.com/learn-co-curriculum/dsc-linalg-regression-lab)
 
-[Getting Started with NumPy - Lab](https://github.com/learn-co-curriculum/dsc-getting-started-with-numpy)
+[Computational Complexity: From OLS to Gradient Descent](https://github.com/learn-co-curriculum/dsc-computational-complexity)
 
 
 #### Learning goals for this lesson:
 
-* Students will be able to use vector addition and multiplication in NumPy
-
-* Students will be able to explain the dot product of vectors and matrices. 
-
-* Students can use NumPy to compute the inverse and transpose of matrices. 
-
-* Students can use NumPy to solve systems of linear equations. 
-
-* _Optional_: Students can use matrix algebra and NumPy to calculate the parameter values for simple linear regression. 
+* Students can compute the derivative of a function using Python. 
+* Students can compute the derivative of a function using power rules, constant factor and the addition rule. 
+* Students can find the minimum and maximum of a function by setting the derivative of the function equal to zero. 
+* Students can compute cost curves for simple linear regression examples in the case where one of the two parameters is constant.
 
 
 #### Relevant learning goals from Airtable: 
 
-* LINEAR_ALG.1.reczfY7oGMJSfOsTa
+* CALCULUS.1.recDyqR3NTzUraSmo
 
-* LINEAR_ALG.2.recoqJEZZT8sLuFhw
+* CALCULUS.2.recqEQiKIWUraMo9L
 
-* LINEAR_ALG.2.recTx2fOf6IcxhM5f
+* CALCULUS.2.rec1A5EIZyfW4sk72
 
-* LINEAR_ALG.2.recPQEDAklOguF6oT
+* CALCULUS.2.rec9XtfukeoO8oRFI
 
-* LINEAR_ALG.2.rec5CRnepBfNw9h5f
+* CALCULUS.3.recO4WOkYjVpzwZgh
 
-* LINEAR_ALG.2.recHuCJtD9KGoig8Y
-
-* LINEAR_ALG.2.recU5oOE3Jcgx2XJ5
-
-* LINEAR_ALG.1.recPHVle0oj24FyR8
-
-* LINEAR_ALG.1.recsYijcJ9OL77GDT
-
-* LINEAR_ALG.1.recuu1meEe5QYZXFi
-
-* LINEAR_ALG.2.rec6XhidPxKtczQoJ
-
-* LINEAR_ALG.2.recNWsUWAkidrTCFP
-
-* LINEAR_ALG.2.recTqePbXAk1CDfsV
+* CALCULUS.1.recALruM4amjWAXht
 
 #### Misconceptions / Notes
 
-* Students may be confused by the need to add a column of 1s to the coefficients matrix when performing simple linear regression using NumPy. 
 
 #### Materials
 
@@ -113,39 +90,27 @@ Students should have a grasp of simple algebra problems and how to solve them. T
 
 #### Vocab / Concepts 
 
-* vectors, matrices
-* transpose of a matrix
-* inverse of a matrix 
+* difference quotient 
+* derivative 
+* cost function
 
 #### Lesson Outline:
 
-* Motivation to learn Linear Algebra (5 minutes) 
-    * We use concepts related to linear algebra for many applications in Data Science such as NLP, computer processing, recommender systems, etc.
-
-* Solving systems of linear equations using basic algebra (5 minutes)
-    * Before we're able to solve systems of linear equations using NumPy we need to learn about vectors and matrices. 
+* Derivatives (30 minutes overall)
+    * Motivation (5 minutes) 
+        * The derivative as the instantaneous rate of change of f(x) at a point x and the slope of the line tangent to f(x) at x
+    * Computing the derivative by calculating the difference quotient as $\Delta x$ get smaller and smaller (15 minutes)
+        * Compare to the derivative of a function obtained by applying rules (addition rules, constant factor rule, and chain rule) 
+            * Two examples: one simple, the other more involved. 
+    * Finding the minima and maxima of a function (10 minutes) 
+        * What happens to the slope of the lines tangent to f(x) before and after the critical value
+        
+* Cost functions in linear regression (~20 minutes overall)
+    * Evaluating how well a line fits data 
+        * If needed, spend some extra time making sure students understand why they need to square the errors. 
+    * Computing the mean squared error for different lines for the same data: plotting cost curves 
+    * Three-dimensional cost curve 
     
-* Vectors (10 minutes) 
-    * Defining vectors in NumPy 
-    * Adding vectors with NumPy
-    * Computing the dot product of two vectors with NumPy
-
-* Matrices (20 minutes)
-    * Defining matrices in NumPy
-    * Computing the shape of matrices
-    * Using NumPy to compute the transpose of a matrix. 
-    * Multiplying matrices with NumPy
-        * Concrete problems are presented to students to solve so they understand the intricacies of matrix multiplication
-            * It's important to stress that two matrices may only be multiplied together if the number of columns of the first matrix matches the number of rows of the second
-            * Matrix multiplication is not commutative: this is showcased by asking students to multiply a matrix by its transpose in the two possible orders. 
-    * Computing the inverse of a matrix using NumPy.
-
-* Solving systems of linear equations using NumPy (10 minutes) 
-    * Students solve systems of linear equations by computing the inverse of a matrix and also by using `np.linalg.solve`. 
-
 * Summary (5 minutes)
 
 Wiggle room: 5 minutes 
-
-* Simple Linear Regression: Ordinary Least Squares and NumPy (20 minutes) 
-    * For advanced groups, or if time permits, simple linear regression with OLS in NumPy is presented using a toy model. 
